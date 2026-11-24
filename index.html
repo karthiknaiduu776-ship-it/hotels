@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AURELIA GRAND | Luxury Hotel & Resort</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="logo">AURELIA<span>GRAND</span></a>
+      <nav class="nav-links">
+        <a href="#rooms">Rooms & Suites</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#rates">Tariff & Packages</a>
+        <a href="#reviews">Guest Reviews</a>
+        <a href="#booking">Reservation & Payment</a>
+      </nav>
+      <a href="#booking" class="btn btn-primary">Book Stay</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="badge">5-STAR HERITAGE & MODERN HOSPITALITY</span>
+      <h1>EXPERIENCE TIMELESS <span>LUXURY</span> & COMFORT</h1>
+      <p>Indulge in panoramic skyline suites, infinity rooftop pools, fine world dining, and personalized concierge services crafted for unforgettable stays.</p>
+      <div class="hero-actions">
+        <a href="#booking" class="btn btn-primary">Reserve Your Suite</a>
+        <a href="#rooms" class="btn btn-outline">Explore Room Categories</a>
+      </div>
+
+      <!-- Quick Availability Bar -->
+      <form class="quick-bar" action="#booking">
+        <div class="qb-item">
+          <label>Check-In</label>
+          <input type="date" required />
+        </div>
+        <div class="qb-item">
+          <label>Check-Out</label>
+          <input type="date" required />
+        </div>
+        <div class="qb-item">
+          <label>Guests</label>
+          <select>
+            <option>2 Adults, 0 Children</option>
+            <option>1 Adult</option>
+            <option>2 Adults, 1 Child</option>
+            <option>4 Adults (Family Suite)</option>
+          </select>
+        </div>
+        <div class="qb-item">
+          <label>Room Type</label>
+          <select>
+            <option>All Categories</option>
+            <option>Deluxe King Room</option>
+            <option>Executive Club Suite</option>
+            <option>Royal Penthouse Villa</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Check Rates</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Room Categories Section -->
+  <section id="rooms" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle">CURATED ACCOMMODATIONS</span>
+        <h2>ROOM CATEGORIES & SUITES</h2>
+        <p>Every room is soundproofed and appointed with plush Egyptian cotton bedding, smart room automation, and private balconies.</p>
+      </div>
+
+      <div class="grid-2">
+        <!-- Room 1 -->
+        <div class="room-card">
+          <div class="room-img">
+            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80" alt="Deluxe King Room" />
+            <span class="room-tag">BEST VALUE</span>
+          </div>
+          <div class="room-body">
+            <div class="room-top">
+              <h3>Deluxe King Room</h3>
+              <div class="room-price">₹6,499<span>/night</span></div>
+            </div>
+            <p>380 sq.ft • City View • 1 King Bed • Max 2 Adults</p>
+            <ul class="room-amenities">
+              <li>✔ Rain Shower & Marble Bath</li>
+              <li>✔ 55" 4K Smart TV & High-Speed Wi-Fi</li>
+              <li>✔ Nespresso Machine & Mini Bar</li>
+              <li>✔ Complimentary Buffet Breakfast</li>
+            </ul>
+            <a href="#booking" class="btn btn-outline full-width">Select Deluxe Room</a>
+          </div>
+        </div>
+
+        <!-- Room 2 -->
+        <div class="room-card">
+          <div class="room-img">
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80" alt="Premier Twin Room" />
+            <span class="room-tag">BUSINESS FAVORITE</span>
+          </div>
+          <div class="room-body">
+            <div class="room-top">
+              <h3>Premier Twin Garden Room</h3>
+              <div class="room-price">₹7,999<span>/night</span></div>
+            </div>
+            <p>440 sq.ft • Courtyard Garden View • 2 Twin Beds • Max 3 Guests</p>
+            <ul class="room-amenities">
+              <li>✔ Private Sit-Out Balcony</li>
+              <li>✔ Ergonomic Executive Work Desk</li>
+              <li>✔ Evening Turndown & Pillow Menu</li>
+              <li>✔ Complimentary Airport Pickup</li>
+            </ul>
+            <a href="#booking" class="btn btn-outline full-width">Select Premier Twin</a>
+          </div>
+        </div>
+
+        <!-- Room 3 -->
+        <div class="room-card featured-room">
+          <div class="room-img">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80" alt="Executive Club Suite" />
+            <span class="room-tag gold">MOST BOOKED</span>
+          </div>
+          <div class="room-body">
+            <div class="room-top">
+              <h3>Executive Club Suite</h3>
+              <div class="room-price">₹12,999<span>/night</span></div>
+            </div>
+            <p>680 sq.ft • Panoramic Pool View • Separate Living Lounge • Max 3 Guests</p>
+            <ul class="room-amenities">
+              <li>✔ Free-Standing Soaking Bathtub</li>
+              <li>✔ Exclusive Club Lounge & Cocktail Access</li>
+              <li>✔ Dedicated 24/7 Butler Service</li>
+              <li>✔ Late Check-Out till 4:00 PM</li>
+            </ul>
+            <a href="#booking" class="btn btn-primary full-width">Select Executive Suite</a>
+          </div>
+        </div>
+
+        <!-- Room 4 -->
+        <div class="room-card">
+          <div class="room-img">
+            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=900&q=80" alt="Royal Penthouse Suite" />
+            <span class="room-tag">ULTRA LUXURY</span>
+          </div>
+          <div class="room-body">
+            <div class="room-top">
+              <h3>Royal Presidential Penthouse</h3>
+              <div class="room-price">₹24,999<span>/night</span></div>
+            </div>
+            <p>1,450 sq.ft • 2 Bedrooms • Private Plunge Jacuzzi & Terrace • Max 5 Guests</p>
+            <ul class="room-amenities">
+              <li>✔ Private Heated Terrace Plunge Pool</li>
+              <li>✔ In-Suite Dining Room & Private Chef</li>
+              <li>✔ Chauffeur-Driven Luxury Sedan Transfer</li>
+              <li>✔ Complimentary Couple Spa Therapy</li>
+            </ul>
+            <a href="#booking" class="btn btn-outline full-width">Select Penthouse</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facilities Section with Images -->
+  <section id="facilities" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle">RESORT AMENITIES</span>
+        <h2>WORLD-CLASS HOTEL FACILITIES</h2>
+        <p>Designed for leisure, wellness, corporate summits, and family celebrations.</p>
+      </div>
+
+      <!-- Featured Visual Facilities -->
+      <div class="grid-3 mb-40">
+        <div class="facility-photo-card">
+          <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=800&q=80" alt="Rooftop Infinity Pool" />
+          <div class="facility-photo-body">
+            <h4>Rooftop Infinity Pool & Sky Deck</h4>
+            <p>Temperature-controlled infinity pool overlooking the city skyline with sunken cabanas and poolside bar service.</p>
+          </div>
+        </div>
+
+        <div class="facility-photo-card">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Fine Dining Restaurant" />
+          <div class="facility-photo-body">
+            <h4>Saffron & Oak Fine Dining</h4>
+            <p>All-day gourmet restaurant serving authentic Indian royal cuisine, wood-fired Mediterranean dishes, and live grills.</p>
+          </div>
+        </div>
+
+        <div class="facility-photo-card">
+          <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80" alt="Ayurveda & Luxury Spa" />
+          <div class="facility-photo-body">
+            <h4>Serenity Ayurveda & Wellness Spa</h4>
+            <p>Rejuvenating deep-tissue therapies, aromatic steam rooms, Jacuzzi hydrotherapy, and couples' wellness suites.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Complete Facilities Checklist Grid -->
+      <div class="mini-facilities-grid">
+        <div class="mini-fac"><span>✈️</span> <strong>24/7 Airport Chauffeur</strong><p>Luxury sedan & SUV transfers on request.</p></div>
+        <div class="mini-fac"><span>🏋️</span> <strong>24-Hour Fitness Studio</strong><p>Technogym equipment & personal trainers.</p></div>
+        <div class="mini-fac"><span>🏛️</span> <strong>Grand Banquet & Conferences</strong><p>500-guest pillarless hall with 4K AV setup.</p></div>
+        <div class="mini-fac"><span>📶</span> <strong>1 Gbps Fiber Wi-Fi</strong><p>Seamless coverage across rooms & pool deck.</p></div>
+        <div class="mini-fac"><span>🚗</span> <strong>Valet & EV Charging</strong><p>Covered basement parking with fast EV bays.</p></div>
+        <div class="mini-fac"><span>🛎️</span> <strong>24/7 In-Room Dining</strong><p>Curated midnight menu & butler service.</p></div>
+        <div class="mini-fac"><span>👶</span> <strong>Kids Play Zone & Babysitting</strong><p>Supervised indoor activity lounge for children.</p></div>
+        <div class="mini-fac"><span>🩺</span> <strong>Doctor on Call & Laundry</strong><p>Express 3-hour pressing & medical assistance.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transparent Pricing & Packages Table -->
+  <section id="rates" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle">TARIFF & MEAL PLANS</span>
+        <h2>ROOM PRICES & STAY PACKAGES</h2>
+        <p>Compare nightly rates across meal inclusions. All rates are per room, per night (excluding 12%/18% GST).</p>
+      </div>
+
+      <div class="table-wrapper">
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>Room Category</th>
+              <th>Room Only (EP)</th>
+              <th>Breakfast Included (CP)</th>
+              <th>Breakfast + Dinner (MAP)</th>
+              <th>All-Inclusive (AP)</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Deluxe King Room</strong><br><small>380 sq.ft • Max 2 Adults</small></td>
+              <td>₹5,499</td>
+              <td class="highlight-price">₹6,499</td>
+              <td>₹7,999</td>
+              <td>₹9,499</td>
+              <td><a href="#booking" class="table-btn">Book</a></td>
+            </tr>
+            <tr>
+              <td><strong>Premier Twin Garden</strong><br><small>440 sq.ft • Max 3 Guests</small></td>
+              <td>₹6,999</td>
+              <td class="highlight-price">₹7,999</td>
+              <td>₹9,499</td>
+              <td>₹10,999</td>
+              <td><a href="#booking" class="table-btn">Book</a></td>
+            </tr>
+            <tr>
+              <td><strong>Executive Club Suite</strong><br><small>680 sq.ft • Club Lounge</small></td>
+              <td>₹11,499</td>
+              <td class="highlight-price">₹12,999</td>
+              <td>₹14,999</td>
+              <td>₹16,999</td>
+              <td><a href="#booking" class="table-btn">Book</a></td>
+            </tr>
+            <tr>
+              <td><strong>Royal Presidential Penthouse</strong><br><small>1,450 sq.ft • Private Jacuzzi</small></td>
+              <td>₹22,999</td>
+              <td class="highlight-price">₹24,999</td>
+              <td>₹27,999</td>
+              <td>₹30,999</td>
+              <td><a href="#booking" class="table-btn">Book</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews Section -->
+  <section id="reviews" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle">VERIFIED GUEST STORIES</span>
+        <h2>CUSTOMER REVIEWS (4.9 ★ / 5.0)</h2>
+        <p>Rated #1 Luxury Stay by over 2,400 verified travelers.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"The Executive Club Suite exceeded every expectation. The rooftop infinity pool at sunset and the breakfast buffet at Saffron & Oak were unforgettable."</p>
+          <div class="reviewer">
+            <div class="avatar">RK</div>
+            <div>
+              <h4>Rohan Kulkarni</h4>
+              <span>Stayed in Executive Suite • Oct 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Booked two Premier Twin rooms for a family weekend. Spotless rooms, super fast check-in, and the kids loved the pool and indoor play area."</p>
+          <div class="reviewer">
+            <div class="avatar">SP</div>
+            <div>
+              <h4>Sneha Deshmukh</h4>
+              <span>Family Vacation • Nov 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Seamless airport pickup, high-speed Wi-Fi for my client calls, and an incredible Ayurveda spa session after work. My go-to hotel in the city."</p>
+          <div class="reviewer">
+            <div class="avatar">AM</div>
+            <div>
+              <h4>Aditya Menon</h4>
+              <span>Business Traveler • Nov 2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Booking & Money/Payment Section -->
+  <section id="booking" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle">INSTANT CONFIRMATION</span>
+        <h2>RESERVATION & PAYMENT PORTAL</h2>
+        <p>Lock in your stay with zero hidden booking fees, instant voucher generation, and flexible payment modes.</p>
+      </div>
+
+      <div class="booking-grid">
+        <!-- Left: Booking Form & Add-on Facilities -->
+        <form class="booking-form" action="#" method="POST">
+          <h3>1. Guest & Stay Details</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="guest-name">Primary Guest Full Name *</label>
+              <input type="text" id="guest-name" placeholder="e.g., Karthik Varma" required />
+            </div>
+            <div class="form-group">
+              <label for="guest-phone">Mobile Number *</label>
+              <input type="tel" id="guest-phone" placeholder="+91 98765 43210" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="guest-email">Email for Voucher *</label>
+              <input type="email" id="guest-email" placeholder="guest@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="id-proof">Government ID Type</label>
+              <select id="id-proof">
+                <option>Aadhaar Card</option>
+                <option>Passport</option>
+                <option>Driving License</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="checkin">Check-In Date *</label>
+              <input type="date" id="checkin" required />
+            </div>
+            <div class="form-group">
+              <label for="checkout">Check-Out Date *</label>
+              <input type="date" id="checkout" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="room-select">Select Room Category</label>
+              <select id="room-select">
+                <option value="deluxe">Deluxe King Room — ₹6,499/night</option>
+                <option value="premier">Premier Twin Garden — ₹7,999/night</option>
+                <option value="executive" selected>Executive Club Suite — ₹12,999/night</option>
+                <option value="penthouse">Royal Penthouse — ₹24,999/night</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="meal-plan">Meal Plan</label>
+              <select id="meal-plan">
+                <option value="cp" selected>Complimentary Breakfast (CP)</option>
+                <option value="ep">Room Only (EP)</option>
+                <option value="map">Breakfast + Dinner (MAP)</option>
+                <option value="ap">All-Inclusive Meals (AP)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Optional Booking Facilities -->
+          <div class="addons-box">
+            <label class="addons-title">2. Add-On Booking Facilities</label>
+            <div class="checkbox-grid">
+              <label class="check-item"><input type="checkbox" checked /> Airport Luxury Sedan Pickup (+₹1,200)</label>
+              <label class="check-item"><input type="checkbox" /> Couple Ayurveda Spa Session (+₹3,500)</label>
+              <label class="check-item"><input type="checkbox" /> Candlelight Rooftop Dinner (+₹2,800)</label>
+              <label class="check-item"><input type="checkbox" /> Extra Rollaway Bed (+₹1,500)</label>
+            </div>
+          </div>
+
+          <!-- Payment Method Selection -->
+          <div class="payment-methods">
+            <label class="addons-title">3. Select Payment Mode</label>
+            <div class="pay-tabs">
+              <label class="pay-option">
+                <input type="radio" name="paymode" value="upi" checked />
+                <span>UPI / QR (GPay, PhonePe, Paytm)</span>
+              </label>
+              <label class="pay-option">
+                <input type="radio" name="paymode" value="card" />
+                <span>Credit / Debit Card</span>
+              </label>
+              <label class="pay-option">
+                <input type="radio" name="paymode" value="netbanking" />
+                <span>Net Banking</span>
+              </label>
+              <label class="pay-option">
+                <input type="radio" name="paymode" value="hotel" />
+                <span>Pay at Hotel Check-In</span>
+              </label>
+            </div>
+
+            <div class="form-row mt-16">
+              <div class="form-group">
+                <label for="upi-card">UPI ID or Card Number</label>
+                <input type="text" id="upi-card" placeholder="username@upi or XXXX-XXXX-XXXX-4242" />
+              </div>
+              <div class="form-group">
+                <label for="promo">Promo Code</label>
+                <input type="text" id="promo" placeholder="AURELIA15" />
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary full-width">Confirm Booking & Pay Now</button>
+        </form>
+
+        <!-- Right: Money & Tariff Breakdown Summary Card -->
+        <aside class="billing-card">
+          <div class="billing-header">
+            <span class="subtitle">TARIFF SUMMARY</span>
+            <h3>Booking & Money Breakdown</h3>
+          </div>
+
+          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=700&q=80" alt="Selected Suite" class="billing-img" />
+
+          <div class="billing-details">
+            <div class="bill-row">
+              <span>Selected Room</span>
+              <strong>Executive Club Suite</strong>
+            </div>
+            <div class="bill-row">
+              <span>Duration</span>
+              <strong>2 Nights, 2 Adults</strong>
+            </div>
+            <div class="bill-row">
+              <span>Room Tariff (₹12,999 × 2)</span>
+              <span>₹25,998</span>
+            </div>
+            <div class="bill-row">
+              <span>Airport Sedan Pickup</span>
+              <span>₹1,200</span>
+            </div>
+            <div class="bill-row discount">
+              <span>Direct Web Discount (10%)</span>
+              <span>- ₹2,600</span>
+            </div>
+            <div class="bill-row">
+              <span>Luxury GST & Taxes (18%)</span>
+              <span>₹4,428</span>
+            </div>
+            <div class="bill-total">
+              <span>Total Payable Amount</span>
+              <strong>₹29,026</strong>
+            </div>
+          </div>
+
+          <div class="billing-policies">
+            <p>✔ <strong>Free Cancellation</strong> up to 24 hours prior to check-in.</p>
+            <p>✔ <strong>256-Bit SSL Encrypted</strong> secure payment gateway.</p>
+            <p>✔ <strong>GST Invoice</strong> provided automatically on checkout.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <a href="#" class="logo">AURELIA<span>GRAND</span></a>
+        <p>18 Jubilee Hills Road, Hyderabad • Reservations: +91 40 2345 6789</p>
+      </div>
+      <div class="footer-links">
+        <a href="#rooms">Rooms</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#rates">Tariff</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#booking">Book Now</a>
+      </div>
+      <p class="copyright">© 2026 Aurelia Grand Hotels & Resorts Pvt. Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
